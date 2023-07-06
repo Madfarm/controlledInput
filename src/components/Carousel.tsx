@@ -1,10 +1,14 @@
 
-export default function Carousel(){
+export default function Carousel() {
+    
+
     return (
-    <div className='wootdoot'>
-        <div className='box'>we</div>
-        <div className='box'>23</div>
-        <div className='box'>1</div>
-    </div>
+        <div className='wootdoot'>
+            <div className='box'>⟵</div>
+            <div className='box'>
+                <h1></h1>
+            </div>
+            <div className='box'>⟶</div>
+        </div>
     )
 }

@@ -1,0 +1,21 @@
+{
+    "cats": 
+    [   
+        {
+            "name": "Dog",
+            "img": "http://placekitten.com/200/300"
+        },
+        {
+            "name": "DogMan",
+            "img": "http://placekitten.com/300/200"
+        },
+        {
+            "name": "Kitsee",
+            "img": "http://placekitten.com/400/300"
+        },
+        {
+            "name": "Json",
+            "img": "http://placekitten.com/300/400"
+        }
+    ]
+}

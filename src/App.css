@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.wootdoot {
+  border: 1px solid white;
+  height: 50vh;
+  width: 50vw;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+}

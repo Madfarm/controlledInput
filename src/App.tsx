@@ -21,6 +21,11 @@ function App() {
       <p>Last - {formData.lastName}</p>
       <p>Age -{formData.Age}</p>
       <Form handleSubmit={handleSubmit}/>
+      <div className='wootdoot'>
+        <div className='box'>we</div>
+        <div className='box'>23</div>
+        <div className='box'>1</div>
+      </div>
     </>
   )
 }

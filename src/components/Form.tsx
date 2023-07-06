@@ -23,7 +23,7 @@ export default function Form({ handleSubmit }) {
                 Age: 0
             });
         }}>  
-            <input type="text" onChange={handleChange} value={newGuy.firstName} name="firstName"></input>
+            <input type="text" placeholder="whatever" onChange={handleChange} name="firstName"></input>
             <input type="text" onChange={handleChange}  value={newGuy.lastName} name="lastName"></input>
             <input type="number" onChange={handleChange}  value={newGuy.Age} name="Age"></input>
             <button type="submit">Submit</button>

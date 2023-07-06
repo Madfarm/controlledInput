@@ -15,10 +15,17 @@ export default function Form({ handleSubmit }) {
     }
 
     return (
-        <form onSubmit={(e)=>handleSubmit(e,newGuy)}>  
+        <form onSubmit={(e)=> {
+            handleSubmit(e,newGuy);
+            setNewGuy({
+                firstName: "",
+                lastName: "",
+                Age: 0
+            });
+        }}>  
             <input type="text" onChange={handleChange} value={newGuy.firstName} name="firstName"></input>
-            <input type="text" onChange={handleChange}  value="lastName" name="lastName"></input>
-            <input type="number" onChange={handleChange}  value="Age" name="Age"></input>
+            <input type="text" onChange={handleChange}  value={newGuy.lastName} name="lastName"></input>
+            <input type="number" onChange={handleChange}  value={newGuy.Age} name="Age"></input>
             <button type="submit">Submit</button>
         </form>
     )

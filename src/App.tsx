@@ -3,16 +3,24 @@ import './App.css'
 import { useState } from 'react';
 
 function App() {
-  const [num, setNum] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    Age: 0
+  })
 
-  function handleChange(e) {
-    setNum(e.target.value);
+  function handleSubmit(e, newStuffs) {
+    e.preventDefault();
+
+    setFormData(newStuffs);
   }
 
   return (
     <>
-      <p>{num}</p>
-      <Form handleChange={handleChange}/>
+      <p>First - {formData.firstName}</p>
+      <p>Last - {formData.lastName}</p>
+      <p>Age -{formData.Age}</p>
+      <Form handleSubmit={handleSubmit}/>
     </>
   )
 }
